@@ -12,6 +12,11 @@ namespace VoteCraft
         {
             InitializeComponent();
             Clipboard.SetText("HiTechCharles");  //set clipboard with MC user name
+            decimal diff = (NextLevelNUD.Value - VoteTotalNUD.Value) / 5;
+            decimal RUP = Math.Round(diff, 0, MidpointRounding.AwayFromZero);
+            DaysTB.Text = RUP.ToString();
+
+
             SiteURL[0] = "http://topminecraftservers.org/vote/4613";
             SiteName[0] = "Top MineCraft Servers";
             Site1BTN.Text = SiteName[0];

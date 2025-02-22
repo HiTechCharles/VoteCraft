@@ -103,7 +103,7 @@
             this.VoteTotalLBL.AutoSize = true;
             this.VoteTotalLBL.Location = new System.Drawing.Point(1217, 9);
             this.VoteTotalLBL.Name = "VoteTotalLBL";
-            this.VoteTotalLBL.Size = new System.Drawing.Size(182, 39);
+            this.VoteTotalLBL.Size = new System.Drawing.Size(272, 58);
             this.VoteTotalLBL.TabIndex = 5;
             this.VoteTotalLBL.Text = "Vote &Total";
             // 
@@ -112,7 +112,7 @@
             this.NextLevelLBL.AutoSize = true;
             this.NextLevelLBL.Location = new System.Drawing.Point(1226, 82);
             this.NextLevelLBL.Name = "NextLevelLBL";
-            this.NextLevelLBL.Size = new System.Drawing.Size(187, 39);
+            this.NextLevelLBL.Size = new System.Drawing.Size(281, 58);
             this.NextLevelLBL.TabIndex = 7;
             this.NextLevelLBL.Text = "Next &Level";
             // 
@@ -130,10 +130,10 @@
             0,
             0});
             this.VoteTotalNUD.Name = "VoteTotalNUD";
-            this.VoteTotalNUD.Size = new System.Drawing.Size(120, 46);
+            this.VoteTotalNUD.Size = new System.Drawing.Size(120, 65);
             this.VoteTotalNUD.TabIndex = 6;
             this.VoteTotalNUD.Value = new decimal(new int[] {
-            250,
+            340,
             0,
             0,
             0});
@@ -153,7 +153,7 @@
             0,
             0});
             this.NextLevelNUD.Name = "NextLevelNUD";
-            this.NextLevelNUD.Size = new System.Drawing.Size(120, 46);
+            this.NextLevelNUD.Size = new System.Drawing.Size(120, 65);
             this.NextLevelNUD.TabIndex = 8;
             this.NextLevelNUD.Value = new decimal(new int[] {
             500,
@@ -167,7 +167,7 @@
             this.DaysLBL.AutoSize = true;
             this.DaysLBL.Location = new System.Drawing.Point(1610, 9);
             this.DaysLBL.Name = "DaysLBL";
-            this.DaysLBL.Size = new System.Drawing.Size(189, 39);
+            this.DaysLBL.Size = new System.Drawing.Size(287, 58);
             this.DaysLBL.TabIndex = 9;
             this.DaysLBL.Text = "&Days to Go";
             // 
@@ -176,12 +176,12 @@
             this.DaysTB.Location = new System.Drawing.Point(1617, 75);
             this.DaysTB.Name = "DaysTB";
             this.DaysTB.ReadOnly = true;
-            this.DaysTB.Size = new System.Drawing.Size(182, 46);
+            this.DaysTB.Size = new System.Drawing.Size(182, 65);
             this.DaysTB.TabIndex = 10;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(20F, 39F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(30F, 58F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1811, 130);
