@@ -47,7 +47,7 @@
             // 
             this.Site1BTN.BackColor = System.Drawing.SystemColors.HotTrack;
             this.Site1BTN.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Site1BTN.Location = new System.Drawing.Point(1, 1);
+            this.Site1BTN.Location = new System.Drawing.Point(-5, 1);
             this.Site1BTN.Name = "Site1BTN";
             this.Site1BTN.Size = new System.Drawing.Size(242, 127);
             this.Site1BTN.TabIndex = 0;
