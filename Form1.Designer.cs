@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.Site1BTN = new System.Windows.Forms.Button();
             this.Site2BTN = new System.Windows.Forms.Button();
             this.Site3BTN = new System.Windows.Forms.Button();
@@ -39,6 +40,8 @@
             this.NextLevelNUD = new System.Windows.Forms.NumericUpDown();
             this.DaysLBL = new System.Windows.Forms.Label();
             this.DaysTB = new System.Windows.Forms.TextBox();
+            this.WikiBTN = new System.Windows.Forms.Button();
+            this.SaveFile = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.VoteTotalNUD)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NextLevelNUD)).BeginInit();
             this.SuspendLayout();
@@ -47,7 +50,7 @@
             // 
             this.Site1BTN.BackColor = System.Drawing.SystemColors.HotTrack;
             this.Site1BTN.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Site1BTN.Location = new System.Drawing.Point(-5, 1);
+            this.Site1BTN.Location = new System.Drawing.Point(12, 9);
             this.Site1BTN.Name = "Site1BTN";
             this.Site1BTN.Size = new System.Drawing.Size(242, 127);
             this.Site1BTN.TabIndex = 0;
@@ -58,7 +61,7 @@
             // 
             this.Site2BTN.BackColor = System.Drawing.SystemColors.HotTrack;
             this.Site2BTN.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Site2BTN.Location = new System.Drawing.Point(243, 1);
+            this.Site2BTN.Location = new System.Drawing.Point(281, 12);
             this.Site2BTN.Name = "Site2BTN";
             this.Site2BTN.Size = new System.Drawing.Size(242, 127);
             this.Site2BTN.TabIndex = 1;
@@ -69,7 +72,7 @@
             // 
             this.Site3BTN.BackColor = System.Drawing.SystemColors.HotTrack;
             this.Site3BTN.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Site3BTN.Location = new System.Drawing.Point(491, 1);
+            this.Site3BTN.Location = new System.Drawing.Point(550, 9);
             this.Site3BTN.Name = "Site3BTN";
             this.Site3BTN.Size = new System.Drawing.Size(242, 127);
             this.Site3BTN.TabIndex = 2;
@@ -80,7 +83,7 @@
             // 
             this.Site4BTN.BackColor = System.Drawing.SystemColors.HotTrack;
             this.Site4BTN.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Site4BTN.Location = new System.Drawing.Point(727, 1);
+            this.Site4BTN.Location = new System.Drawing.Point(12, 164);
             this.Site4BTN.Name = "Site4BTN";
             this.Site4BTN.Size = new System.Drawing.Size(242, 127);
             this.Site4BTN.TabIndex = 3;
@@ -91,7 +94,7 @@
             // 
             this.Site5BTN.BackColor = System.Drawing.SystemColors.HotTrack;
             this.Site5BTN.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Site5BTN.Location = new System.Drawing.Point(969, 1);
+            this.Site5BTN.Location = new System.Drawing.Point(281, 164);
             this.Site5BTN.Name = "Site5BTN";
             this.Site5BTN.Size = new System.Drawing.Size(242, 127);
             this.Site5BTN.TabIndex = 4;
@@ -101,39 +104,36 @@
             // VoteTotalLBL
             // 
             this.VoteTotalLBL.AutoSize = true;
-            this.VoteTotalLBL.Location = new System.Drawing.Point(1217, 9);
+            this.VoteTotalLBL.Location = new System.Drawing.Point(829, 12);
             this.VoteTotalLBL.Name = "VoteTotalLBL";
-            this.VoteTotalLBL.Size = new System.Drawing.Size(272, 58);
-            this.VoteTotalLBL.TabIndex = 5;
+            this.VoteTotalLBL.Size = new System.Drawing.Size(228, 48);
+            this.VoteTotalLBL.TabIndex = 6;
             this.VoteTotalLBL.Text = "Vote &Total";
             // 
             // NextLevelLBL
             // 
             this.NextLevelLBL.AutoSize = true;
-            this.NextLevelLBL.Location = new System.Drawing.Point(1226, 82);
+            this.NextLevelLBL.Location = new System.Drawing.Point(820, 118);
             this.NextLevelLBL.Name = "NextLevelLBL";
-            this.NextLevelLBL.Size = new System.Drawing.Size(281, 58);
-            this.NextLevelLBL.TabIndex = 7;
+            this.NextLevelLBL.Size = new System.Drawing.Size(234, 48);
+            this.NextLevelLBL.TabIndex = 8;
             this.NextLevelLBL.Text = "Next &Level";
             // 
             // VoteTotalNUD
             // 
-            this.VoteTotalNUD.Location = new System.Drawing.Point(1419, 1);
+            this.VoteTotalNUD.Location = new System.Drawing.Point(1123, 9);
             this.VoteTotalNUD.Maximum = new decimal(new int[] {
-            500,
-            0,
-            0,
-            0});
-            this.VoteTotalNUD.Minimum = new decimal(new int[] {
-            150,
+            9999,
             0,
             0,
             0});
             this.VoteTotalNUD.Name = "VoteTotalNUD";
-            this.VoteTotalNUD.Size = new System.Drawing.Size(120, 65);
-            this.VoteTotalNUD.TabIndex = 6;
+            this.VoteTotalNUD.Size = new System.Drawing.Size(298, 56);
+            this.VoteTotalNUD.TabIndex = 7;
+            this.VoteTotalNUD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.VoteTotalNUD.ThousandsSeparator = true;
             this.VoteTotalNUD.Value = new decimal(new int[] {
-            340,
+            400,
             0,
             0,
             0});
@@ -141,20 +141,17 @@
             // 
             // NextLevelNUD
             // 
-            this.NextLevelNUD.Location = new System.Drawing.Point(1419, 80);
+            this.NextLevelNUD.Location = new System.Drawing.Point(1123, 124);
             this.NextLevelNUD.Maximum = new decimal(new int[] {
-            500,
-            0,
-            0,
-            0});
-            this.NextLevelNUD.Minimum = new decimal(new int[] {
-            250,
+            9999,
             0,
             0,
             0});
             this.NextLevelNUD.Name = "NextLevelNUD";
-            this.NextLevelNUD.Size = new System.Drawing.Size(120, 65);
-            this.NextLevelNUD.TabIndex = 8;
+            this.NextLevelNUD.Size = new System.Drawing.Size(298, 56);
+            this.NextLevelNUD.TabIndex = 9;
+            this.NextLevelNUD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.NextLevelNUD.ThousandsSeparator = true;
             this.NextLevelNUD.Value = new decimal(new int[] {
             500,
             0,
@@ -165,26 +162,44 @@
             // DaysLBL
             // 
             this.DaysLBL.AutoSize = true;
-            this.DaysLBL.Location = new System.Drawing.Point(1610, 9);
+            this.DaysLBL.Location = new System.Drawing.Point(814, 240);
             this.DaysLBL.Name = "DaysLBL";
-            this.DaysLBL.Size = new System.Drawing.Size(287, 58);
-            this.DaysLBL.TabIndex = 9;
+            this.DaysLBL.Size = new System.Drawing.Size(239, 48);
+            this.DaysLBL.TabIndex = 10;
             this.DaysLBL.Text = "&Days to Go";
             // 
             // DaysTB
             // 
-            this.DaysTB.Location = new System.Drawing.Point(1617, 75);
+            this.DaysTB.Location = new System.Drawing.Point(1123, 236);
             this.DaysTB.Name = "DaysTB";
             this.DaysTB.ReadOnly = true;
-            this.DaysTB.Size = new System.Drawing.Size(182, 65);
-            this.DaysTB.TabIndex = 10;
+            this.DaysTB.Size = new System.Drawing.Size(298, 56);
+            this.DaysTB.TabIndex = 11;
+            // 
+            // WikiBTN
+            // 
+            this.WikiBTN.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.WikiBTN.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.WikiBTN.Location = new System.Drawing.Point(550, 164);
+            this.WikiBTN.Name = "WikiBTN";
+            this.WikiBTN.Size = new System.Drawing.Size(242, 127);
+            this.WikiBTN.TabIndex = 5;
+            this.WikiBTN.UseVisualStyleBackColor = false;
+            this.WikiBTN.Click += new System.EventHandler(this.WikiBTN_Click);
+            // 
+            // SaveFile
+            // 
+            this.SaveFile.Enabled = true;
+            this.SaveFile.Interval = 5000;
+            this.SaveFile.Tick += new System.EventHandler(this.SaveFile_Tick);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(30F, 58F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(25F, 48F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(1811, 130);
+            this.ClientSize = new System.Drawing.Size(1451, 307);
+            this.Controls.Add(this.WikiBTN);
             this.Controls.Add(this.DaysTB);
             this.Controls.Add(this.DaysLBL);
             this.Controls.Add(this.NextLevelNUD);
@@ -220,6 +235,8 @@
         private System.Windows.Forms.NumericUpDown NextLevelNUD;
         private System.Windows.Forms.Label DaysLBL;
         private System.Windows.Forms.TextBox DaysTB;
+        private System.Windows.Forms.Button WikiBTN;
+        private System.Windows.Forms.Timer SaveFile;
     }
 }
 
