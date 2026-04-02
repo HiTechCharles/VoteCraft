@@ -50,9 +50,10 @@
             // 
             this.Site1BTN.BackColor = System.Drawing.SystemColors.HotTrack;
             this.Site1BTN.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Site1BTN.Location = new System.Drawing.Point(12, 9);
+            this.Site1BTN.Location = new System.Drawing.Point(9, 7);
+            this.Site1BTN.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Site1BTN.Name = "Site1BTN";
-            this.Site1BTN.Size = new System.Drawing.Size(242, 127);
+            this.Site1BTN.Size = new System.Drawing.Size(182, 94);
             this.Site1BTN.TabIndex = 0;
             this.Site1BTN.UseVisualStyleBackColor = false;
             this.Site1BTN.Click += new System.EventHandler(this.Site1BTN_Click);
@@ -61,9 +62,10 @@
             // 
             this.Site2BTN.BackColor = System.Drawing.SystemColors.HotTrack;
             this.Site2BTN.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Site2BTN.Location = new System.Drawing.Point(281, 12);
+            this.Site2BTN.Location = new System.Drawing.Point(211, 9);
+            this.Site2BTN.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Site2BTN.Name = "Site2BTN";
-            this.Site2BTN.Size = new System.Drawing.Size(242, 127);
+            this.Site2BTN.Size = new System.Drawing.Size(182, 94);
             this.Site2BTN.TabIndex = 1;
             this.Site2BTN.UseVisualStyleBackColor = false;
             this.Site2BTN.Click += new System.EventHandler(this.Site2BTN_Click);
@@ -72,9 +74,10 @@
             // 
             this.Site3BTN.BackColor = System.Drawing.SystemColors.HotTrack;
             this.Site3BTN.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Site3BTN.Location = new System.Drawing.Point(550, 9);
+            this.Site3BTN.Location = new System.Drawing.Point(412, 7);
+            this.Site3BTN.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Site3BTN.Name = "Site3BTN";
-            this.Site3BTN.Size = new System.Drawing.Size(242, 127);
+            this.Site3BTN.Size = new System.Drawing.Size(182, 94);
             this.Site3BTN.TabIndex = 2;
             this.Site3BTN.UseVisualStyleBackColor = false;
             this.Site3BTN.Click += new System.EventHandler(this.Site3BTN_Click);
@@ -83,9 +86,10 @@
             // 
             this.Site4BTN.BackColor = System.Drawing.SystemColors.HotTrack;
             this.Site4BTN.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Site4BTN.Location = new System.Drawing.Point(12, 164);
+            this.Site4BTN.Location = new System.Drawing.Point(9, 122);
+            this.Site4BTN.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Site4BTN.Name = "Site4BTN";
-            this.Site4BTN.Size = new System.Drawing.Size(242, 127);
+            this.Site4BTN.Size = new System.Drawing.Size(182, 94);
             this.Site4BTN.TabIndex = 3;
             this.Site4BTN.UseVisualStyleBackColor = false;
             this.Site4BTN.Click += new System.EventHandler(this.Site4BTN_Click);
@@ -94,9 +98,10 @@
             // 
             this.Site5BTN.BackColor = System.Drawing.SystemColors.HotTrack;
             this.Site5BTN.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Site5BTN.Location = new System.Drawing.Point(281, 164);
+            this.Site5BTN.Location = new System.Drawing.Point(211, 122);
+            this.Site5BTN.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Site5BTN.Name = "Site5BTN";
-            this.Site5BTN.Size = new System.Drawing.Size(242, 127);
+            this.Site5BTN.Size = new System.Drawing.Size(182, 94);
             this.Site5BTN.TabIndex = 4;
             this.Site5BTN.UseVisualStyleBackColor = false;
             this.Site5BTN.Click += new System.EventHandler(this.Site5BTN_Click);
@@ -104,31 +109,34 @@
             // VoteTotalLBL
             // 
             this.VoteTotalLBL.AutoSize = true;
-            this.VoteTotalLBL.Location = new System.Drawing.Point(829, 12);
+            this.VoteTotalLBL.Location = new System.Drawing.Point(622, 9);
+            this.VoteTotalLBL.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.VoteTotalLBL.Name = "VoteTotalLBL";
-            this.VoteTotalLBL.Size = new System.Drawing.Size(228, 48);
+            this.VoteTotalLBL.Size = new System.Drawing.Size(136, 29);
             this.VoteTotalLBL.TabIndex = 6;
             this.VoteTotalLBL.Text = "Vote &Total";
             // 
             // NextLevelLBL
             // 
             this.NextLevelLBL.AutoSize = true;
-            this.NextLevelLBL.Location = new System.Drawing.Point(820, 118);
+            this.NextLevelLBL.Location = new System.Drawing.Point(615, 88);
+            this.NextLevelLBL.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.NextLevelLBL.Name = "NextLevelLBL";
-            this.NextLevelLBL.Size = new System.Drawing.Size(234, 48);
+            this.NextLevelLBL.Size = new System.Drawing.Size(141, 29);
             this.NextLevelLBL.TabIndex = 8;
             this.NextLevelLBL.Text = "Next &Level";
             // 
             // VoteTotalNUD
             // 
-            this.VoteTotalNUD.Location = new System.Drawing.Point(1123, 9);
+            this.VoteTotalNUD.Location = new System.Drawing.Point(842, 7);
+            this.VoteTotalNUD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.VoteTotalNUD.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
             this.VoteTotalNUD.Name = "VoteTotalNUD";
-            this.VoteTotalNUD.Size = new System.Drawing.Size(298, 56);
+            this.VoteTotalNUD.Size = new System.Drawing.Size(224, 36);
             this.VoteTotalNUD.TabIndex = 7;
             this.VoteTotalNUD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.VoteTotalNUD.ThousandsSeparator = true;
@@ -141,14 +149,15 @@
             // 
             // NextLevelNUD
             // 
-            this.NextLevelNUD.Location = new System.Drawing.Point(1123, 124);
+            this.NextLevelNUD.Location = new System.Drawing.Point(842, 92);
+            this.NextLevelNUD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.NextLevelNUD.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
             this.NextLevelNUD.Name = "NextLevelNUD";
-            this.NextLevelNUD.Size = new System.Drawing.Size(298, 56);
+            this.NextLevelNUD.Size = new System.Drawing.Size(224, 36);
             this.NextLevelNUD.TabIndex = 9;
             this.NextLevelNUD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.NextLevelNUD.ThousandsSeparator = true;
@@ -162,27 +171,30 @@
             // DaysLBL
             // 
             this.DaysLBL.AutoSize = true;
-            this.DaysLBL.Location = new System.Drawing.Point(814, 240);
+            this.DaysLBL.Location = new System.Drawing.Point(610, 178);
+            this.DaysLBL.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.DaysLBL.Name = "DaysLBL";
-            this.DaysLBL.Size = new System.Drawing.Size(239, 48);
+            this.DaysLBL.Size = new System.Drawing.Size(143, 29);
             this.DaysLBL.TabIndex = 10;
             this.DaysLBL.Text = "&Days to Go";
             // 
             // DaysTB
             // 
-            this.DaysTB.Location = new System.Drawing.Point(1123, 236);
+            this.DaysTB.Location = new System.Drawing.Point(842, 175);
+            this.DaysTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DaysTB.Name = "DaysTB";
             this.DaysTB.ReadOnly = true;
-            this.DaysTB.Size = new System.Drawing.Size(298, 56);
+            this.DaysTB.Size = new System.Drawing.Size(224, 36);
             this.DaysTB.TabIndex = 11;
             // 
             // WikiBTN
             // 
             this.WikiBTN.BackColor = System.Drawing.SystemColors.HotTrack;
             this.WikiBTN.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.WikiBTN.Location = new System.Drawing.Point(550, 164);
+            this.WikiBTN.Location = new System.Drawing.Point(412, 122);
+            this.WikiBTN.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.WikiBTN.Name = "WikiBTN";
-            this.WikiBTN.Size = new System.Drawing.Size(242, 127);
+            this.WikiBTN.Size = new System.Drawing.Size(182, 94);
             this.WikiBTN.TabIndex = 5;
             this.WikiBTN.UseVisualStyleBackColor = false;
             this.WikiBTN.Click += new System.EventHandler(this.WikiBTN_Click);
@@ -195,10 +207,10 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(25F, 48F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(1451, 307);
+            this.ClientSize = new System.Drawing.Size(1088, 228);
             this.Controls.Add(this.WikiBTN);
             this.Controls.Add(this.DaysTB);
             this.Controls.Add(this.DaysLBL);
@@ -211,10 +223,11 @@
             this.Controls.Add(this.Site3BTN);
             this.Controls.Add(this.Site2BTN);
             this.Controls.Add(this.Site1BTN);
-            this.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
             this.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MineCraft Voting List for Noob-Friendly";
             ((System.ComponentModel.ISupportInitialize)(this.VoteTotalNUD)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NextLevelNUD)).EndInit();
