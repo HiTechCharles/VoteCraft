@@ -5,13 +5,13 @@ using System.Diagnostics;
 
 namespace VoteCraft
 {
-    public partial class Form1 : Form
+    public partial class  Form1 : Form
     {
-        private readonly struct Site
+        private readonly struct VoteSite
         {
             public string Name { get; }
             public string Url { get; }
-            public Site(string name, string url) { Name = name; Url = url; }
+            public VoteSite(string name, string url) { Name = name; Url = url; }
         }
 
         private const decimal VotesPerDay = 5m;
@@ -19,7 +19,7 @@ namespace VoteCraft
         private const string ApplicationFolderName = "VoteCraft";
         private const string LogFileName = "VoteStats.txt";
 
-        private readonly Site[] _sites;
+        private readonly VoteSite[] _sites;
 
         private static readonly string CatPath;
         private static readonly string LogPath;
@@ -48,12 +48,12 @@ namespace VoteCraft
             // Central site list
             _sites = new[]
             {
-                new Site("Top MineCraft Servers", "http://topminecraftservers.org/vote/4613"),
-                new Site("MineCraft Servers.org", "https://minecraftservers.org/vote/525699"),
-                new Site("MineCraft Server List", "https://minecraft-server-list.com/server/434154/vote/"),
-                new Site("Minecraft MP", "https://minecraft-mp.com/server/211256/vote/"),
-                new Site("Minecraft Buzz", "https://minecraft.buzz/vote/7051"),
-                new Site("MC Java Wiki", "https://minecraft.fandom.com/wiki/Java_Edition")
+                new VoteSite("Top MineCraft Servers", "http://topminecraftservers.org/vote/4613"),
+                new VoteSite("MineCraft Servers.org", "https://minecraftservers.org/vote/525699"),
+                new VoteSite("MineCraft Server List", "https://minecraft-server-list.com/server/434154/vote/"),
+                new VoteSite("Minecraft MP", "https://minecraft-mp.com/server/211256/vote/"),
+                new VoteSite("Minecraft Buzz", "https://minecraft.buzz/vote/7051"),
+                new VoteSite("MC Java Wiki", "https://minecraft.fandom.com/wiki/Java_Edition")
             };
 
             // Assign button text from sites (buttons are created in designer)
